@@ -13,6 +13,7 @@ COPY authorized_keys /home/$username/.ssh
 
 USER root
 
+# the builtin "tail" is too old to work in docker… so… download and build a coreutils version that will work
 RUN apt install -y build-essential
 RUN wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.gz && tar -xf coreutils-8.32.tar.gz -C /root
 ENV FORCE_UNSAFE_CONFIGURE 1
