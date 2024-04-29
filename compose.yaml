@@ -1,5 +1,0 @@
-services:
-  sshd:
-    build: .
-    ports:
-      - "22222:22"
