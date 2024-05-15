@@ -13,3 +13,7 @@ To use:
     * `<host ip>` is the IP of the host machine running docker
     * `<user>` is what was passed as the build argument
     * The port is always `22222`
+
+Versions:
+* CentOS 7 is using OpenSSH 7.x
+* Ubuntu 14 is using OpenSSH 6.x
