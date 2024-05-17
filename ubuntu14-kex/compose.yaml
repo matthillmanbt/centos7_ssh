@@ -1,0 +1,7 @@
+services:
+  sshd:
+    build:
+      context: ..
+      dockerfile: ubuntu14-kex/Dockerfile
+    ports:
+      - "22222:22"
